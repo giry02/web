@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="다솜에스앤씨 - 미래를 향한 스마트 IT 파트너. 컨설팅, IT 아웃소싱, 시스템 통합, 자체 솔루션 서비스를 제공합니다.">
+    <meta name="keywords" content="다솜에스앤씨, IT 컨설팅, 시스템통합, 아웃소싱, IT 솔루션">
+    <meta property="og:title" content="다솜에스앤씨 - 스마트 IT 파트너">
+    <meta property="og:description" content="비즈니스의 새로운 가치를 창조하는 IT 전문기업">
+    <meta property="og:type" content="website">
+    <title>다솜에스앤씨 | DASOM S&C - 스마트 IT 파트너</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Mobile Redirect -->
+    <script>
+        (function() {
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            if (isMobile && window.location.pathname.indexOf('/mobile/') === -1) {
+                // 모바일 접속 시 모바일 페이지로 이동
+                // 기존 모바일 페이지 URL로 리다이렉트 (필요 시 변경)
+                window.location.href = '/mobile/index.html';
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo" id="logo">
+                <img src="images/ds_logo.svg" alt="다솜에스앤씨 로고">
+                <span class="logo-text">DASOM S&C</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop" id="nav-desktop" aria-label="메인 내비게이션">
+                <a href="company.html" class="nav-link">회사소개</a>
+                <a href="services.html" class="nav-link">서비스</a>
+                <a href="portfolio.html" class="nav-link">주요실적</a>
+                <a href="recruit.html" class="nav-link">인재채용</a>
+                <a href="location.html" class="nav-link">오시는 길</a>
+                <a href="#contact" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.85rem;">문의하기</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="메뉴 열기/닫기">
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile" id="nav-mobile" aria-label="모바일 내비게이션">
+        <a href="company.html" class="nav-mobile-link">회사소개</a>
+        <a href="services.html" class="nav-mobile-link">서비스</a>
+        <a href="portfolio.html" class="nav-mobile-link">주요실적</a>
+        <a href="recruit.html" class="nav-mobile-link">인재채용</a>
+        <a href="location.html" class="nav-mobile-link">오시는 길</a>
+        <a href="#contact" class="nav-mobile-link" style="color: var(--primary);">문의하기</a>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero_bg.png" alt="히어로 배경" loading="eager">
+        </div>
+        <div class="hero-overlay"></div>
+
+        <!-- Floating particles -->
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>Smart IT Partnership</span>
+            </div>
+            <h1 class="hero-title">
+                미래를 향한<br>
+                <span class="highlight">스마트 IT 파트너</span>
+            </h1>
+            <p class="hero-desc">
+                다솜에스앤씨와 함께 비즈니스의 새로운 가치를 창조하세요.<br>
+                최적의 IT 솔루션으로 디지털 혁신을 실현합니다.
+            </p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary" id="hero-cta-primary">
+                    서비스 알아보기
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#about" class="btn btn-outline" id="hero-cta-secondary">
+                    회사소개
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES SECTION
+         ============================================ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Our Services</span>
+                <h2 class="section-title dark">비즈니스에 최적화된<br>IT 서비스를 제공합니다</h2>
+                <p class="section-desc">고객의 비즈니스 환경에 맞는 최적의 IT 전략과 서비스를 통해 디지털 전환을 지원합니다.</p>
+            </div>
+
+            <div class="services-grid">
+                <a href="services.html#consulting" class="service-card reveal delay-1" id="service-consulting">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v4"/><path d="m15.5 7.5 2.83-2.83"/><path d="M20 12h4"/><path d="m17.66 17.66 2.83 2.83"/><path d="M12 20v4"/><path d="m6.34 17.66-2.83 2.83"/><path d="M0 12h4"/><path d="m6.34 6.34-2.83-2.83"/>
+                        </svg>
+                    </div>
+                    <h3>컨설팅</h3>
+                    <p>IT 전략 수립부터 시스템 분석까지, 비즈니스 최적화를 위한 전문 컨설팅</p>
+                    <span class="arrow">
+                        자세히 보기
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </span>
+                </a>
+
+                <a href="services.html#outsourcing" class="service-card reveal delay-2" id="service-outsourcing">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/>
+                        </svg>
+                    </div>
+                    <h3>IT 아웃소싱</h3>
+                    <p>안정적인 시스템 운영과 유지보수로 핵심 비즈니스에 집중할 수 있도록 지원</p>
+                    <span class="arrow">
+                        자세히 보기
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </span>
+                </a>
+
+                <a href="services.html#integration" class="service-card reveal delay-3" id="service-integration">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"/><path d="M12 1v4"/><path d="M12 19v4"/><path d="M1 12h4"/><path d="M19 12h4"/><path d="m4.22 4.22 2.83 2.83"/><path d="m16.95 16.95 2.83 2.83"/><path d="m4.22 19.78 2.83-2.83"/><path d="m16.95 7.05 2.83-2.83"/>
+                        </svg>
+                    </div>
+                    <h3>시스템 통합</h3>
+                    <p>요구사항에 맞는 맞춤형 시스템 설계 및 구축으로 업무 효율성 극대화</p>
+                    <span class="arrow">
+                        자세히 보기
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </span>
+                </a>
+
+                <a href="services.html#solution" class="service-card reveal delay-4" id="service-solution">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3>자체 Solution</h3>
+                    <p>자체 개발 솔루션으로 업무 프로세스를 혁신하고 비용을 절감합니다</p>
+                    <span class="arrow">
+                        자세히 보기
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal-left">
+                    <!-- CSS/SVG 기반 기술 인포그래픽 -->
+                    <div class="tech-graphic">
+                        <div class="tech-orbit">
+                            <div class="orbit-ring ring-1"></div>
+                            <div class="orbit-ring ring-2"></div>
+                            <div class="orbit-ring ring-3"></div>
+                            <!-- 중앙 아이콘 -->
+                            <div class="orbit-center">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <!-- 궤도 위 노드들 -->
+                            <div class="orbit-node node-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4"/><path d="m15.5 7.5 2.83-2.83"/><path d="M20 12h4"/><path d="m17.66 17.66 2.83 2.83"/><path d="M12 20v4"/><path d="m6.34 17.66-2.83 2.83"/><path d="M0 12h4"/><path d="m6.34 6.34-2.83-2.83"/></svg>
+                                <span>컨설팅</span>
+                            </div>
+                            <div class="orbit-node node-2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                                <span>아웃소싱</span>
+                            </div>
+                            <div class="orbit-node node-3">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4"/><path d="M12 19v4"/><path d="M1 12h4"/><path d="M19 12h4"/></svg>
+                                <span>시스템통합</span>
+                            </div>
+                            <div class="orbit-node node-4">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                                <span>솔루션</span>
+                            </div>
+                        </div>
+                        <!-- 배지 -->
+                        <div class="float-badge">
+                            <div class="number">10+</div>
+                            <div class="label">Years of Excellence</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <span class="section-tag">About Us</span>
+                    <h3>함께 성장하며<br>새로운 가치를 창조합니다</h3>
+                    <p class="about-highlight">IT 전문기업 다솜에스앤씨</p>
+                    <p>
+                        다솜에스앤씨는 다년간의 IT 프로젝트 경험을 바탕으로,
+                        고객의 비즈니스 경쟁력 강화를 위한 최적의 IT 솔루션을 제공합니다.
+                    </p>
+                    <p>
+                        컨설팅부터 시스템 구축, 운영, 유지보수까지 원스톱 서비스를 통해
+                        고객의 디지털 혁신 여정을 함께합니다.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="100">100+</div>
+                            <div class="stat-label">프로젝트 수행</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="50">50+</div>
+                            <div class="stat-label">고객사 파트너</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="10">10+</div>
+                            <div class="stat-label">업력 (년)</div>
+                        </div>
+                    </div>
+                    <a href="company.html" class="btn btn-outline-dark" style="margin-top: 28px;" id="about-cta">
+                        회사소개 자세히 보기
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PORTFOLIO / TRACK RECORD SECTION
+         ============================================ -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" style="color: var(--accent-light);">Track Record</span>
+                <h2 class="section-title light">주요 사업 실적을<br>한눈에 확인하세요</h2>
+                <p class="section-desc light">다양한 산업 분야에서 검증된 전문성과 실적으로 고객의 성공을 이끌어냅니다.</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <a href="portfolio.html#telecom" class="portfolio-card reveal delay-1" id="portfolio-telecom">
+                    <div class="card-number">01</div>
+                    <h3>통신솔루션</h3>
+                    <p>통신사 핵심 시스템의 안정적 운영과 혁신적인 솔루션 개발을 통해 통신 인프라 최적화를 실현합니다.</p>
+                    <div class="card-line"></div>
+                </a>
+
+                <a href="portfolio.html#erp" class="portfolio-card reveal delay-2" id="portfolio-erp">
+                    <div class="card-number">02</div>
+                    <h3>그룹웨어 & ERP</h3>
+                    <p>기업 업무 효율화를 위한 그룹웨어, ERP 등 협업 시스템 구축 및 커스터마이징을 지원합니다.</p>
+                    <div class="card-line"></div>
+                </a>
+
+                <a href="portfolio.html#public" class="portfolio-card reveal delay-3" id="portfolio-public">
+                    <div class="card-number">03</div>
+                    <h3>공공사업</h3>
+                    <p>공공기관 디지털 전환 프로젝트 수행 경험을 바탕으로 안정적이고 효율적인 시스템을 구축합니다.</p>
+                    <div class="card-line"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         QUICK LINKS SECTION
+         ============================================ -->
+    <section class="quick-links" id="quick-links">
+        <div class="container">
+            <div class="quick-grid">
+                <a href="company.html#history" class="quick-card reveal delay-1" id="quick-history">
+                    <div class="quick-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>다솜에스앤씨의 발자취</h4>
+                        <p>끊임없는 도전과 혁신의 역사</p>
+                    </div>
+                </a>
+
+                <a href="company.html#partners" class="quick-card reveal delay-2" id="quick-partners">
+                    <div class="quick-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>고객사 & 파트너</h4>
+                        <p>함께 성장하는 든든한 파트너</p>
+                    </div>
+                </a>
+
+                <a href="portfolio.html" class="quick-card reveal delay-3" id="quick-portfolio">
+                    <div class="quick-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>주요 사업 실적</h4>
+                        <p>검증된 프로젝트 수행 이력</p>
+                    </div>
+                </a>
+
+                <a href="recruit.html" class="quick-card reveal delay-4" id="quick-recruit">
+                    <div class="quick-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>인재채용</h4>
+                        <p>다솜에스앤씨와 함께 할 인재</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CTA SECTION
+         ============================================ -->
+    <section class="cta" id="contact">
+        <div class="container">
+            <div class="cta-inner reveal">
+                <div class="cta-content">
+                    <h2>함께 만들어 가는<br>IT 솔루션</h2>
+                    <p>비즈니스 성장을 위한 최적의 IT 파트너,<br>다솜에스앤씨에 문의하세요.</p>
+                    <a href="mailto:ywkim@dasomsnc.co.kr" class="btn-white" id="cta-email">
+                        이메일 문의하기
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/ds_logo.svg" alt="다솜에스앤씨">
+                        <span>DASOM S&C</span>
+                    </div>
+                    <p>미래를 향한 스마트 IT 파트너로서, 고객과 함께 비즈니스의 새로운 가치를 창조합니다.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>회사소개</h4>
+                    <a href="company.html">다솜에스앤씨</a>
+                    <a href="company.html#vision">Vision & Mission</a>
+                    <a href="company.html#history">연혁</a>
+                    <a href="location.html">오시는 길</a>
+                    <a href="company.html#partners">고객사/파트너</a>
+                    <a href="company.html#esg">ESG활동</a>
+                </div>
+                <div class="footer-col">
+                    <h4>서비스</h4>
+                    <a href="services.html#consulting">컨설팅</a>
+                    <a href="services.html#outsourcing">IT 아웃소싱</a>
+                    <a href="services.html#integration">시스템 통합</a>
+                    <a href="services.html#solution">자체 Solution</a>
+                </div>
+                <div class="footer-col">
+                    <h4>주요실적</h4>
+                    <a href="portfolio.html#telecom">통신솔루션</a>
+                    <a href="portfolio.html#erp">그룹웨어 & ERP</a>
+                    <a href="portfolio.html#public">공공사업</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>COPYRIGHT &copy; 2014 DASOM S&C, ALL RIGHTS RESERVED.</span>
+                <div class="footer-contact">
+                    <a href="tel:028314382">TEL (02) 831-4382</a>
+                    <a href="mailto:ywkim@dasomsnc.co.kr">ywkim@dasomsnc.co.kr</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="페이지 상단으로 이동">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script src="js/main.js"></script>
+</body>
+</html>
