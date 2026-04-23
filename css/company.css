@@ -551,6 +551,115 @@
     background: var(--accent);
 }
 
+/* ---- ESG Download List ---- */
+.esg-list-download li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    transition: background 0.2s ease;
+}
+
+.esg-list-download li:last-child {
+    border-bottom: none;
+}
+
+.esg-list-download li:hover {
+    background: rgba(37, 99, 235, 0.03);
+    border-radius: 6px;
+}
+
+.esg-list-download li span {
+    flex: 1;
+    font-size: 0.85rem;
+    color: var(--text-body);
+}
+
+.esg-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: rgba(37, 99, 235, 0.08);
+    flex-shrink: 0;
+    transition: all 0.25s ease;
+    margin-left: 8px;
+}
+
+.esg-download-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--primary);
+    transition: all 0.25s ease;
+}
+
+.esg-download-btn:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.esg-download-btn:hover svg {
+    stroke: #fff;
+}
+
+/* ---- ESG Ethics Notice ---- */
+.esg-ethics-notice {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 28px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(6, 182, 212, 0.04));
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    border-radius: var(--radius-lg);
+    margin-bottom: 40px;
+}
+
+.ethics-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.ethics-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--primary);
+}
+
+.ethics-content strong {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.ethics-content p {
+    font-size: 0.85rem;
+    color: var(--text-body);
+    margin: 0;
+}
+
+.ethics-content a {
+    color: var(--primary);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.ethics-content a:hover {
+    color: var(--accent-dark);
+}
+
 /* ---- Financial Section ---- */
 .financial-section {
     text-align: center;
